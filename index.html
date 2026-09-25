@@ -3,119 +3,96 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="BioCycle is a student prototype for turning bio-waste into useful resources.">
+	<meta name="description" content="BioCycle is a student prototype for exploring responsible bio-waste handling and reuse pathways.">
 	<title>BioCycle | Bio-Waste to Value Assistant</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header class="site-header">
 		<div class="container nav-wrap">
-			<a class="brand" href="#top" aria-label="BioCycle home">
-				<span class="brand-mark" aria-hidden="true">🌱</span>
-				<span>BioCycle</span>
-			</a>
+			<a class="brand" href="#home" aria-label="BioCycle home"><span class="brand-mark" aria-hidden="true">BC</span><span>BioCycle</span></a>
 			<nav class="main-nav" aria-label="Main navigation">
+				<a href="#home">Home</a>
+				<a href="#problem">Problem</a>
+				<a href="#approach">Approach</a>
 				<a href="#assistant">Assistant</a>
-				<a href="#how-it-works">How it works</a>
-				<a href="#categories">Waste categories</a>
+				<a href="#pathways">Pathways</a>
+				<a href="#future-scope">Future Scope</a>
 			</nav>
+			<a class="nav-cta" href="#assistant">Try the assistant <span aria-hidden="true">-></span></a>
 		</div>
 	</header>
 
-	<main id="top">
+	<main id="home">
 		<section class="hero container" aria-labelledby="hero-title">
 			<div class="hero-copy">
-				<p class="eyebrow">ENVIRONMENTAL BIOTECHNOLOGY · STUDENT PROTOTYPE</p>
-				<h1 id="hero-title">Bio-Waste<br><span>to Value</span></h1>
+				<p class="eyebrow">ENVIRONMENTAL BIOTECHNOLOGY <span>/</span> STUDENT PROTOTYPE</p>
+				<h1 id="hero-title">Bio<span>Cycle</span></h1>
 				<p class="hero-subtitle">Bio-Waste to Value Assistant</p>
-				<p class="hero-intro">Turn bio-waste into useful resources. BioCycle helps you understand how organic waste can be separated, treated and reused in simple, practical ways.</p>
-				<a class="button button-primary" href="#assistant">Explore your waste <span aria-hidden="true">→</span></a>
+				<p class="hero-tagline">Turning everyday organic waste into pathways for responsible reuse.</p>
+				<p class="hero-intro">A simple educational prototype that helps users identify suitable bio-waste handling and reuse pathways, one material at a time.</p>
+				<div class="hero-actions"><a class="button button-primary" href="#approach">Explore BioCycle <span aria-hidden="true">-></span></a><a class="button button-secondary" href="#assistant">Ask the Assistant <span aria-hidden="true">+</span></a></div>
 			</div>
-			<div class="hero-visual" aria-label="Illustration of a growing plant and circular resource cycle">
-				<div class="orbit orbit-one"></div>
-				<div class="orbit orbit-two"></div>
-				<div class="cycle-badge"><span>organic</span><strong>↻</strong><span>value</span></div>
-				<div class="plant-art" aria-hidden="true">
-					<span class="leaf leaf-left"></span>
-					<span class="leaf leaf-right"></span>
-					<span class="stem"></span>
-					<span class="soil"></span>
-				</div>
-				<span class="visual-note note-one">separate</span>
-				<span class="visual-note note-two">reuse</span>
-			</div>
+			<div class="hero-visual" aria-label="Abstract illustration representing a bio-waste cycle"><div class="visual-grid"></div><div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div><div class="hero-core"><span class="core-line"></span><strong>bio<br>cycle</strong></div><div class="visual-label label-a">01 / identify</div><div class="visual-label label-b">04 / reuse</div><div class="visual-label label-c">organic inputs</div></div>
+		</section>
+
+		<section class="problem-section" id="problem" aria-labelledby="problem-title">
+			<div class="container problem-grid"><div><p class="eyebrow">01 / THE CONTEXT</p><h2 id="problem-title">The Problem</h2></div><div class="problem-copy"><p class="lead">Organic waste is often mixed with other waste.</p><p>This makes responsible treatment and reuse more difficult. When materials are not separated at the source, it becomes harder to understand which biological pathway may be appropriate.</p><p>BioCycle provides simple educational guidance on possible biological treatment and reuse pathways.</p></div></div>
+		</section>
+
+		<section class="approach-section" id="approach" aria-labelledby="approach-title">
+			<div class="container"><div class="section-heading"><p class="eyebrow">02 / THE METHOD</p><h2 id="approach-title">Our Approach</h2><p>Four easy-to-explain steps for thinking about organic materials more intentionally.</p></div><div class="process-grid"><article class="process-step"><span class="step-number">01</span><div class="step-icon">01</div><h3>Identify</h3><p>Notice what kind of organic material you have.</p></article><article class="process-step"><span class="step-number">02</span><div class="step-icon">02</div><h3>Separate</h3><p>Keep bio-waste apart from materials that do not belong in the same stream.</p></article><article class="process-step"><span class="step-number">03</span><div class="step-icon">03</div><h3>Treat</h3><p>Explore a suitable biological treatment pathway.</p></article><article class="process-step"><span class="step-number">04</span><div class="step-icon">04</div><h3>Reuse</h3><p>Consider how useful outputs may support a new purpose.</p></article></div></div>
 		</section>
 
 		<section class="assistant-section" id="assistant" aria-labelledby="assistant-title">
 			<div class="container">
 				<div class="section-heading heading-light">
-					<p class="eyebrow">YOUR WASTE, YOUR NEXT STEP</p>
-					<h2 id="assistant-title">🤖 Ask BioCycle</h2>
-					<p>Ask a question about organic waste and get a simple place to start.</p>
+					<p class="eyebrow">03 / THE ASSISTANT</p>
+					<h2 id="assistant-title">BioCycle Assistant</h2>
+					<p>Explore simple pathways for handling common organic waste.</p>
 				</div>
 				<div class="assistant-grid">
 					<div class="chat-panel">
-						<div class="chat-topline"><span class="status-dot"></span> BioCycle guide <span class="online-label">offline-ready</span></div>
+						<div class="chat-topline"><span class="status-dot"></span> BioCycle guide <span class="online-label">rule-based prototype</span></div>
 						<div class="chat-messages" id="chat-messages" aria-live="polite" aria-label="Chat conversation">
 							<div class="message bot-message">
-								<div class="avatar" aria-hidden="true">🌱</div>
-								<div class="bubble"><p>Hello! I can help you explore bio-waste options. Try asking about composting, vegetable waste or biogas.</p><time>Now</time></div>
+								<div class="avatar" aria-hidden="true">BC</div>
+								<div class="bubble"><span class="message-label">BioCycle</span><p>Hello. I can help you explore vegetable waste, composting, vermicomposting, biogas and more.</p><time>Now</time></div>
 							</div>
 						</div>
 						<form class="chat-form" id="chat-form">
 							<label class="sr-only" for="chat-input">Ask BioCycle a question</label>
-							<input id="chat-input" type="text" placeholder="Ask about your bio-waste..." autocomplete="off" required>
-							<button class="send-button" type="submit" aria-label="Send question">Send <span aria-hidden="true">↗</span></button>
+							<input id="chat-input" type="text" placeholder="Ask about a bio-waste pathway..." autocomplete="off" required>
+							<button class="send-button" type="submit" aria-label="Send question">Send <span aria-hidden="true">-></span></button>
 						</form>
 					</div>
 					<aside class="quick-panel">
-						<p class="quick-kicker">START HERE</p>
+						<p class="quick-kicker">SUGGESTED PROMPTS</p>
 						<h3>Quick questions</h3>
-						<p>Choose a prompt to begin your waste-to-value journey.</p>
+						<p>Choose a prompt to see how the rule-based assistant responds.</p>
 						<div class="quick-questions">
-							<button class="quick-question" type="button" data-question="What can I do with vegetable waste?">What can I do with vegetable waste? <span>↗</span></button>
-							<button class="quick-question" type="button" data-question="How can I make compost?">How can I make compost? <span>↗</span></button>
-							<button class="quick-question" type="button" data-question="What is vermicomposting?">What is vermicomposting? <span>↗</span></button>
-							<button class="quick-question" type="button" data-question="What is biogas?">What is biogas? <span>↗</span></button>
+							<button class="quick-question" type="button" data-question="What can I do with vegetable waste?">Vegetable waste <span>-></span></button>
+							<button class="quick-question" type="button" data-question="How can I make compost?">How can I make compost? <span>-></span></button>
+							<button class="quick-question" type="button" data-question="What is vermicomposting?">What is vermicomposting? <span>-></span></button>
+							<button class="quick-question" type="button" data-question="What is biogas?">What is biogas? <span>-></span></button>
 						</div>
 					</aside>
 				</div>
 			</div>
 		</section>
 
-		<section class="process-section container" id="how-it-works" aria-labelledby="process-title">
-			<div class="section-heading">
-				<p class="eyebrow">A SIMPLE CYCLE</p>
-				<h2 id="process-title">🔄 How BioCycle Works</h2>
-				<p>Small decisions become useful resources when each part of the cycle is considered.</p>
-			</div>
-			<div class="process-grid">
-				<article class="process-step"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Identify</h3><p>Notice what kind of organic material you have.</p></article>
-				<article class="process-step"><span class="step-number">02</span><div class="step-icon">≋</div><h3>Separate</h3><p>Keep bio-waste apart from materials that cannot break down easily.</p></article>
-				<article class="process-step"><span class="step-number">03</span><div class="step-icon">◌</div><h3>Treat</h3><p>Choose a suitable approach, such as composting or digestion.</p></article>
-				<article class="process-step"><span class="step-number">04</span><div class="step-icon">↗</div><h3>Reuse</h3><p>Return nutrients and useful outputs to a new purpose.</p></article>
-			</div>
+		<section class="pathways-section" id="pathways" aria-labelledby="pathways-title">
+			<div class="container"><div class="section-heading"><p class="eyebrow">04 / THE OPTIONS</p><h2 id="pathways-title">Bio-Waste Pathways</h2><p>High-level introductions to four possible biological reuse pathways.</p></div><div class="pathway-grid"><article class="pathway-card"><span class="pathway-index">01</span><div class="pathway-icon">C</div><h3>Composting</h3><p>A controlled way to let suitable organic materials break down into a dark, soil-like material.</p><a href="#assistant">Ask about composting <span>-></span></a></article><article class="pathway-card"><span class="pathway-index">02</span><div class="pathway-icon">V</div><h3>Vermicomposting</h3><p>A small-scale approach where composting worms help process suitable organic scraps.</p><a href="#assistant">Ask about vermicomposting <span>-></span></a></article><article class="pathway-card"><span class="pathway-index">03</span><div class="pathway-icon">B</div><h3>Anaerobic Digestion / Biogas</h3><p>A controlled process where microorganisms break down organic material without oxygen.</p><a href="#assistant">Ask about biogas <span>-></span></a></article><article class="pathway-card"><span class="pathway-index">04</span><div class="pathway-icon">S</div><h3>Organic Soil Amendment</h3><p>Processed organic material can be explored as an input that supports soil improvement.</p><a href="#assistant">Explore the assistant <span>-></span></a></article></div></div>
 		</section>
 
-		<section class="impact-section" aria-labelledby="impact-title">
-			<div class="container impact-content">
-				<div class="impact-symbol" aria-hidden="true">↻</div>
-				<div><p class="eyebrow">THE BIGGER PICTURE</p><h2 id="impact-title">🌍 Sustainability Impact</h2><p>Responsible organic-waste management can support waste reduction and resource recovery. By separating bio-waste and choosing an appropriate treatment method, communities can make better use of materials that would otherwise be discarded.</p></div>
-			</div>
-		</section>
+		<section class="impact-section" aria-labelledby="impact-title"><div class="container"><div class="section-heading"><p class="eyebrow">05 / THE POTENTIAL</p><h2 id="impact-title">Impact Areas</h2><p>Responsible organic-waste management supports practical goals without promising a single outcome for every context.</p></div><div class="impact-grid"><article><span class="impact-number">01</span><h3>Waste Segregation</h3><p>Supports clearer separation of organic materials at the source.</p></article><article><span class="impact-number">02</span><h3>Resource Recovery</h3><p>Can contribute to finding useful pathways for materials otherwise discarded.</p></article><article><span class="impact-number">03</span><h3>Soil Health</h3><p>Some processed organic materials can contribute to soil-supporting practices.</p></article><article><span class="impact-number">04</span><h3>Sustainable Practices</h3><p>Encourages informed, responsible choices in everyday waste handling.</p></article></div></div></section>
 
-		<section class="categories-section container" id="categories" aria-labelledby="categories-title">
-			<div class="section-heading categories-heading"><div><p class="eyebrow">KNOW YOUR INPUTS</p><h2 id="categories-title">💡 Waste Categories</h2></div><p>Different materials call for different next steps.</p></div>
-			<div class="category-grid">
-				<article class="category-card kitchen"><div class="category-icon">🍽️</div><div><h3>Kitchen Waste</h3><p>Food scraps, coffee grounds and other everyday organic leftovers.</p></div><span class="card-arrow">→</span></article>
-				<article class="category-card garden"><div class="category-icon">🌿</div><div><h3>Garden Waste</h3><p>Dry leaves, grass clippings and small plant trimmings.</p></div><span class="card-arrow">→</span></article>
-				<article class="category-card produce"><div class="category-icon">🥕</div><div><h3>Fruit &amp; Vegetable Waste</h3><p>Peels, cores, stems and unused produce from food preparation.</p></div><span class="card-arrow">→</span></article>
-				<article class="category-card organic"><div class="category-icon">♻</div><div><h3>Other Organic Waste</h3><p>Natural materials that may be explored for a suitable reuse pathway.</p></div><span class="card-arrow">→</span></article>
-			</div>
-		</section>
+		<section class="future-section" id="future-scope" aria-labelledby="future-title"><div class="container future-grid"><div><p class="eyebrow">06 / NEXT ITERATION</p><h2 id="future-title">Future Scope</h2><p class="lead">The current version is an educational, rule-based prototype. Future versions could add:</p></div><ul class="future-list"><li><span>01</span>AI-based classification</li><li><span>02</span>Image-based waste identification</li><li><span>03</span>Localized recommendations</li><li><span>04</span>A database of treatment options</li><li><span>05</span>Analytics and dashboards</li></ul></div></section>
+
+		<section class="info-section" aria-labelledby="info-title"><div class="container info-panel"><div><p class="eyebrow">07 / THE PROJECT</p><h2 id="info-title">Project Information</h2></div><dl><div><dt>Project</dt><dd>BioCycle</dd></div><div><dt>Category</dt><dd>Environmental Biotechnology / Sustainable Bio-Waste Management</dd></div><div><dt>Prototype</dt><dd>Web-based educational assistant</dd></div><div><dt>Technology</dt><dd>HTML, CSS, JavaScript</dd></div></dl></div></section>
 	</main>
 
-	<footer class="site-footer"><div class="container"><span>BioCycle</span><span class="footer-line"></span><span>Student Innovation Prototype</span><span class="footer-year">2026</span></div></footer>
+	<footer class="site-footer"><div class="container"><div><strong>BioCycle</strong><span>Student Innovation Prototype</span></div><p>Designed as an educational prototype for sustainable bio-waste management.</p><span class="footer-year">2026</span></div></footer>
 	<script src="script.js"></script>
 </body>
 </html>

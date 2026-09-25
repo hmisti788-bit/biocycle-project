@@ -7,7 +7,7 @@ const responses = [
 	{ keywords: ["vegetable", "fruit", "produce"], answer: "Vegetable and fruit waste can be chopped into smaller pieces and added to a compost mix. Balance it with dry leaves or other dry material, and keep the mix lightly moist." },
 	{ keywords: ["food scrap", "kitchen"], answer: "Food scraps such as peels and leftovers can be collected separately for composting. Avoid mixing them with plastic, glass or other non-organic materials." },
 	{ keywords: ["eggshell"], answer: "Rinse and crush eggshells before adding them to a compost mix. They break down slowly, so small pieces help them blend into the material." },
-	{ keywords: ["dry leaf", "garden waste", "garden"], answer: "Dry leaves and garden waste are useful carbon-rich material for compost. Mix them with wetter green materials, such as fresh plant trimmings, rather than making one thick layer." },
+	{ keywords: ["dry leaf", "dry leaves", "garden waste", "garden"], answer: "Dry leaves and garden waste are useful carbon-rich material for compost. Mix them with wetter green materials, such as fresh plant trimmings, rather than making one thick layer." },
 	{ keywords: ["compost"], answer: "To make compost, combine a mix of green materials and dry brown materials, keep the pile lightly moist, and allow air to move through it. Turn it occasionally and wait for the material to become dark and crumbly." },
 	{ keywords: ["vermicompost", "worm"], answer: "Vermicomposting uses composting worms to help process suitable organic scraps in a moist, ventilated container. It is a small-scale option that needs shade and regular care." },
 	{ keywords: ["biogas", "digestion", "digester"], answer: "Biogas is a fuel-rich gas made when microorganisms break down organic material without oxygen in a controlled digester. The process can also leave a nutrient-rich material for further use." },
@@ -23,8 +23,10 @@ function getResponse(question) {
 function addMessage(text, type) {
 	const message = document.createElement("div");
 	message.className = `message ${type}-message`;
-	const avatar = type === "bot" ? '<div class="avatar" aria-hidden="true">🌱</div>' : "";
-	message.innerHTML = `${avatar}<div class="bubble"><p></p><time>Now</time></div>`;
+	const avatar = type === "bot" ? '<div class="avatar" aria-hidden="true">BC</div>' : "";
+	const label = type === "bot" ? "BioCycle" : "You";
+	const timestamp = new Intl.DateTimeFormat([], { hour: "numeric", minute: "2-digit" }).format(new Date());
+	message.innerHTML = `${avatar}<div class="bubble"><span class="message-label">${label}</span><p></p><time>${timestamp}</time></div>`;
 	message.querySelector("p").textContent = text;
 	chatMessages.appendChild(message);
 	chatMessages.scrollTop = chatMessages.scrollHeight;
